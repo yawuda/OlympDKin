@@ -1,0 +1,50 @@
+<div class='cont'>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium distinctio velit veniam culpa! Officiis eaque quibusdam quis deserunt tenetur enim, sequi nulla facilis cumque totam provident distinctio suscipit perspiciatis, harum, at mollitia ducimus inventore perferendis vero facere numquam omnis rerum possimus. Numquam odio quia aut voluptates pariatur, qui blanditiis, soluta repudiandae! Reiciendis doloribus vel nostrum quidem, ipsum qui minima consequatur nesciunt architecto tempora corporis quam iure iusto voluptatum rem explicabo voluptatibus distinctio laudantium ullam voluptas eius deleniti optio? Nulla iusto beatae facere nihil aperiam non facilis tempora at fuga laborum et cumque esse, eius harum voluptatum dignissimos. Obcaecati, consequuntur, corporis.</h1>
+
+  <div class="panels">
+    <div class="panel panel1">
+      <p>Hey</p>
+      <p>U-10</p>
+      <p>Dance</p>
+    </div>
+    <div class="panel panel2">
+      <p>Give</p>
+      <p>U-14</p>
+      <p>Receive</p>
+    </div>
+    <div class="panel panel3">
+      <p>Experience</p>
+      <p>U-18</p>
+      <p>Today</p>
+    </div>
+    <div class="panel panel4">
+      <p>Give</p>
+      <p>Fille</p>
+      <p>You can</p>
+    </div>
+<!--     <div class="panel panel5">
+      <p>Life</p>
+      <p>In</p>
+      <p>Motion</p>
+    </div> -->
+  </div>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eaque amet doloribus minima cumque ducimus, pariatur et nostrum nesciunt modi autem voluptatibus, explicabo quam. Aut voluptates ad omnis, veritatis suscipit neque sint cupiditate corporis, tempore nihil debitis eaque quaerat, rem mollitia, similique dolor vel porro. Modi adipisci amet commodi, dignissimos quaerat magnam dolores doloremque in dolor sunt vel vitae nobis officiis quasi, non ex totam unde quam facere et. Minima debitis ipsa cupiditate ipsam dolorem odio totam. Perspiciatis nobis voluptatum a, culpa facere debitis, eaque vitae sapiente laudantium reiciendis reprehenderit cumque! Explicabo ipsum dolor sapiente eligendi, pariatur cum iure aspernatur quia nam porro saepe inventore beatae tempore deleniti illo, obcaecati minima natus atque unde amet repellat delectus. Ipsum nostrum esse atque, dolore quis vel eaque expedita laudantium tenetur molestiae? Nemo animi recusandae optio eius vitae autem dignissimos vero, et asperiores amet maiores eveniet, doloribus repellendus vel magnam. Quisquam, blanditiis earum reiciendis harum, at numquam iure a sint ab quidem nostrum consequatur libero odit dolorem expedita commodi, optio, suscipit quasi deserunt provident amet aliquam quod soluta porro! Aperiam facere porro optio quo fugiat vitae, fugit eaque iure excepturi repellat tempore? Optio veniam vitae eveniet nisi consequuntur sit laborum voluptatum delectus quis.</h1>
+  <script>
+    const panels = document.querySelectorAll('.panel');
+
+    function toggleOpen() {
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      console.log(e.propertyName);
+      if(e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  </script>
+</div>

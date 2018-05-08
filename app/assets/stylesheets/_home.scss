@@ -1,0 +1,26 @@
+.cover{
+  position: fixed;
+  top: 198px;
+  height: 76%;
+  width: 100%;
+}
+.content {
+    position: absolute;
+    top: 198px;
+    height: 630px;
+    background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+}
+.container{
+  width:70%;
+  margin:auto;
+}
+.topmiddleone{
+  display:flex;
+  justify-content:center;
+  padding-top: 50px;
+}
+.topmiddletwo{
+  padding-top: 140px;
+}
