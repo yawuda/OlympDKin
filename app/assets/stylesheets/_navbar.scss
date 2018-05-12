@@ -14,7 +14,7 @@ body {
   position: fixed;
   top:0;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 .top {
   display: block;
@@ -48,7 +48,7 @@ body {
   width:20%;
   margin: auto;
 }
-.navbar ul li a {
+.navbar ul li a, .list{
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;

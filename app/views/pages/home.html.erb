@@ -1,11 +1,47 @@
   <%= image_tag("cover.jpg", class:"cover") %>
     <div class="content">
       <div class="container">
-        <div class="topmiddleone">
-          <h1>Follow us on:</h1>
+        <div class="topmiddleone hero">
+          <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, voluptatem!</h1>
         </div>
         <div class="topmiddletwo">
-          <h1>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</h1>
+          <h2>Follow us on:</h2>
+        </div>
+        <div class='topmiddlethree'>
+          <ul>
+            <a href=""><i class="fa fa-facebook-square"></i></a>
+            <a href=""><i class="fa fa-twitter-square"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+          </ul>
         </div>
       </div>
     </div>
+
+<script>
+  const hero = document.querySelector('.hero');
+  const text = hero.querySelector('h1');
+  const walk = 100; // distance of the shadow from text
+
+  function shadow(e){
+    // const width = hero.offsetWidth;
+    // const height = hero.offsetHeight;
+    const { offsetWidth: width, offsetHeight: height } = hero;
+    let { offsetX: x, offsetY: y } = e;
+
+    if (this !== e.target) {
+      x = x + e.target.offsetLeft;
+      y = y + e.target.offsetTop;
+    }
+
+    const xWalk = (x / width * walk) - (walk / 2);
+    const yWalk = (y / height * walk) - (walk / 2);
+
+    // text.style.textShadow = `${xWalk}px ${yWalk}px 0 rgba(213, 5, 5,0.7)`
+        text.style.textShadow = `
+      ${xWalk}px ${yWalk}px 0 rgba(213, 5, 5,0.7),
+      ${xWalk * -1}px ${yWalk}px 0 rgba(8, 8, 226,0.7)
+    `;
+  }
+
+  hero.addEventListener('mousemove', shadow);
+</script>

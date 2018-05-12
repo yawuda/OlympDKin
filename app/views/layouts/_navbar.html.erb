@@ -10,8 +10,9 @@
     <div class='navbar'>
       <ul>
         <li><a href="#">L'equipe</a></li>
-
-        <li><a href="#">Categories</a></li>
+        <%= link_to categories_path do %>
+          <li class='list'>Categories</li>
+        <% end %>
         <li><a href="#">Evenements</a></li>
         <li><a href="#">Media</a></li>
         <li><a href="#">Progression</a></li>

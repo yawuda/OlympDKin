@@ -11,16 +11,38 @@
     background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
     color: #f1f1f1;
     width: 100%;
+    font-size:1.5em;
 }
 .container{
-  width:70%;
+  width:80%;
   margin:auto;
+  height:100%;
+  display:block;
+  align-items: center;
+  justify-content: center;
 }
-.topmiddleone{
+.topmiddleone, .topmiddletwo, .topmiddlethree{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topmiddlethree ul{
+  padding:0;
+}
+.topmiddlethree ul i{
+  font-size: 5em;
+  padding: 10px;
+  color:white;
+}
+.hero {
+  min-height: 25vh;
   display:flex;
-  justify-content:center;
-  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  color:white;
 }
-.topmiddletwo{
-  padding-top: 140px;
+.hero h1 {
+  text-shadow: 10px 10px 0 rgba(0,0,0,1);
+  font-size: 50px;
+  text-align: center;
 }
